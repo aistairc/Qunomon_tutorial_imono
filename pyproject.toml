@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "imono-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["nakagawa-takao <nakagawa-takao@aist.go.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+split-folders = "^0.5.1"
+tqdm = "^4.66.1"
+torchmetrics = "^1.2.0"
+torch = "^2.1.1"
+torchvision = "^0.16.1"
+torchsummary = "^1.5.1"
+matplotlib = "^3.8.2"
+h5 = "^0.8.10"
+scikit-learn = "^1.3.2"
+seaborn = "^0.13.0"
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.26.0"
+
+[[tool.poetry.source]]
+name = "torch_cu121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
